@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS13831</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <style>
+        .info nav li a{
+            text-decoration: none;
+        }
+        .box input[type="text"]{
+            width: 45%;
+            padding: 15px 10px;
+        }
+        .box input[type="tel"]{
+            width: 45%;
+            padding: 15px 10px;
+        }
+        .box input[type="email"]{
+            width: 45%;
+            border: 1px gray solid;
+            padding: 15px 10px;
+            border-radius: 2px;
+            background-color: white;
+        }
+        .box input[type="password"]{
+            width: 45%;
+            padding: 15px 10px;
+        }
+        .box input[type="submit"]{
+            width: 25%;
+            padding: 20px 10px;
+            font-size: 1.5vw;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="row mh1">
+        
+        <nav class="icons">
+            <li class="icon h"><i class="fa fa-facebook"></i></li>
+            <li class="icon h"><i class="fa fa-twitter"></i></li>
+            <li class="icon h"><i class="fa fa-pinterest-p"></i></li>
+            <li class="icon h"><i class="fa fa-instagram"></i></li>
+            <a style="font-size: 1vw;">Need Help? call: 0900 800 900</a>
+        </nav>
+
+        <section class="info">
+            <nav>
+                <li><a>CUSTOMER SUPPORT</a></li>
+                <li><a>SHIPPING & DELIVERY</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a>INFO</a></li>
+                <li style="color: white;"><i class="fa fa-search"></i></li>
+            </nav>
+        </section>
+    
+    </header>
+    
+    <article class="row mh2">
+        
+        <aside class="img">
+            <a href="index.php"><img src="anh/logo.png" alt=""></a>
+        </aside>
+        
+        <aside class="title">
+            <section class="title1" id="menu">
+                <nav>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="cart.html">CONTACT</a></li>
+                </nav>
+            </section>
+            
+            <aside class="title2">
+                <input type="submit" value="PROMOTION">
+            </aside>
+            
+            <aside class="title3">
+                <a href="?act"><i class="fa fa-shopping-bag" style="font-size:3.6vw; color: white;"></i></a>
+            </aside>
+
+        </aside>
+    
+    </article>
+    
+    <article class="row mh3">
+        
+        <aside class="first_box"> 
+                
+            <aside class="bgr">  
+               
+                <aside class="text_center">
+                    <a style="font-size: 4.5vw;">SIGN UP</a>
+                </aside>
+            
+            </aside>
+        
+        </aside>
+        
+    </article>
+    
+    <article class="row mh4">
+        <a>SIGN UP</a>
+        <aside class="box">
+            <form action="" method="post" onsubmit="check()">
+                <input type="text" name="txtName" id="name" placeholder="Full name"><br><br>
+                <input type="text" name="txtDiachi" id="diachi" placeholder="Address"><br><br>
+                <input type="tel" name="txtPhone" id="phone" placeholder="Phone number"><br><br>
+                <input type="email" name="txtEmail" id="email" placeholder="Email"><br><br>
+                <input type="password" name="txtPass" id="pass" placeholder="Password"><br><br><br><br>                   
+                <input type="submit" name="btnSignup" value="SIGN UP">  
+            </form>
+        </aside>
+        
+    </article>
+    
+    <div class="row mh5">
+        <footer>
+            <table>
+                
+                <tr>
+                    <td width="31%" class="title4"><a>NEWSLETTER</a></td>
+                    <td width="5%"></td>
+                    <td width="13%" class="title4"><a>CUSTOMER</a></td>
+                    <td width="5%"></td>
+                    <td width="13%" class="title4"><a>COMPANY</a></td>
+                    <td width="5%"></td>
+                    <td width="13%" class="title4"><a>FEEDBACK</a></td>
+                    <td width="2%"></td>
+                    <td width="13%" class="title4"><a>FOLLOW US</a></td>
+                </tr>
+
+                <tr>
+                    <td style="font-size: 1.1vw;"><a>Stay updated with our latest offers.</a></td>   
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="home.html">HOME</a></td>
+                    <td></td>
+                    <td><a href="home.html">HOME</a></td>
+                    <td></td>
+                    <td rowspan="3">We would like to hear from you with any feedback about our website or products.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="about.html">ABOUT</a></td>
+                    <td></td>
+                    <td><a href="about.html">ABOUT</a></td>
+                    <td></td>
+                    
+                    <td></td>
+                    <td><i class="fa fa-facebook" style="font-size: 1.5vw;"></i><a class="loca">Facebook</a></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3"><input type="email" name="" id="" placeholder="your.address@email.com"></td>
+                    <td></td>
+                    <td><a href="shop.html">SHOP</a></td>
+                    <td></td>
+                    <td><a href="shop.html">SHOP</a></td>
+                    <td></td>
+                    
+                    <td></td>
+                    <td><i class="fa fa-twitter" style="font-size: 1.5vw;"></i> <a>Twitter</a></td>
+                </tr>
+
+                <tr>
+                    
+                    <td></td>
+                    <td><a href="blog.html">BLOG</a></td>
+                    <td></td>
+                    <td><a href="blog.html">BLOG</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-pinterest-p" style="font-size: 1.5vw;"></i><a class="loca">Pinterest</a></td>
+                </tr>
+
+                <tr>
+                    
+                    <td></td>
+                    <td><a href="contact.html">CONTACT</a></td>
+                    <td></td>
+                    <td><a href="contact.html">CONTACT</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-skype"  style="font-size: 1.5vw;"></i><a class="loca">Skype</a></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3"><input type="submit" value="SUBCRIBE"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+            
+        </footer>
+        
+        <a class="end">© 2016 Kallyas.net | All rights reserved.</a>
+    </div>
+
+    
+</body>
+</html>
+<script>
+    function check(){
+    var form = "";
+
+    var fullname = document.getElementById("name");
+    if (fullname.value.length == 0){
+        alert("My Fullname is........");
+    } else {
+        form += "Fullname: " + fullname.value + "\n";
+    }
+    
+    var check_email = document.getElementById("email");
+    if (check_email.value.length == 0){
+        alert("My Email is........");
+    } else {
+        form += "Email: " + check_email.value + "\n";
+    }
+
+    var password = document.getElementById("pass");
+    if (password.value.length <= 7 || password.value.length == 0){
+        alert("Password not password");
+    };
+
+    var phone = document.getElementById("phone").value;
+    if (phone.length == 0){
+        alert("What's your phone number?");
+    } else if(phone.match(/((0)+([0-9]{9})\b)/g) == false){
+        alert("Phone number incorrect!!");
+    } else {
+        form += "Phone: " + phone + "\n";
+    }
+
+}
+
+</script>

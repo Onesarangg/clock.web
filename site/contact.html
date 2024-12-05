@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT_FINAL_PS13831</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header class="row mh1">
+            
+        <nav class="icons">
+            <li class="icon h"><i class="fa fa-facebook"></i></li>
+            <li class="icon h"><i class="fa fa-twitter"></i></li>
+            <li class="icon h"><i class="fa fa-pinterest-p"></i></li>
+            <li class="icon h"><i class="fa fa-instagram"></i></li>
+            <a style="font-size: 10pt;">Need Help? call: 0900 800 900</a>
+        </nav>
+
+        <section class="tin">
+            <nav>
+                <li><a>CUSTOMER SUPPORT</a></li>
+                <li><a>SHIPPING & DELIVERY</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a>INFO</a></li>
+                <li style="color: white;"><i class="fa fa-search"></i></li>
+            </nav>
+        </section>
+    
+    </header>   
+    
+    <article class="row mh2">
+        
+        <aside class="anh">
+            <a href="home.html"><img src="anh/logo.png" alt=""></a>
+        </aside>
+        
+        <aside class="tieude">
+            <section class="tieude1">
+                <nav>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html" style="color: #8f6e43;">CONTACT</a></li>
+                </nav>
+            </section>
+            
+            <aside class="tieude2">
+                <input type="submit" value="PROMOTION">
+            </aside>
+            
+            <aside class="tieude3">
+                <a href="cart.html"><i class="fa fa-shopping-bag" style="font-size:3vw; color: white"></i></a>
+            </aside>
+        </aside>
+    
+    </article>
+    
+    <article class="row mh3">
+        
+        <article class="row3">
+            
+            <aside class="boxa">
+                
+                <aside class="text">               
+                    <h2>CONTACT DETAILS</h2>
+                    <button onclick="getLocation()">GeoLocation</button>
+                    <p id="demo"></p>
+                    <br>
+                    <br>
+
+                    <hr>
+                    
+                    <a><i class="fa fa-phone" style="font-size:2vw"></i> +84 111 222 333</a><br><br>
+                    <a><i class="fa fa-envelope" style="font-size:1.5vw"></i> OneChuChi@kwatch.com</a>
+                </aside>
+            
+            </aside>
+            
+            <aside class="boxb mt" id="mapholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.822149485159!2d127.02516391494744!3d37.51211263500142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3bbe749da91%3A0xf920302e6e9406c1!2sBig%20hit%20entertainment%20Seoul!5e0!3m2!1sen!2s!4v1588790470270!5m2!1sen!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </aside>
+        
+        </article>
+    
+    </article>
+    
+    <article class="row mh4">
+        
+        <h3>SEND US A MESSAGE</h3>
+        
+        <aside class="box_big">
+            <table>
+                <tr width="100%">
+                    <td width="48%"><input type="text" placeholder="First Name" id="Name"></td>
+                    <td width="4%"></td>
+                    <td width="48%"><input type="text" placeholder="Last Name" id="L.Name"></td>
+                </tr>
+            
+                <tr>
+                    <td colspan="3"><input type="email" placeholder="Email Address" id="Mail"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><input type="text" placeholder="Message" id="Message" style="height: 70px;"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox"><a style="color: #8f6e43; font-weight: bolder;" onclick="check()">Subscribe to our newsletter</a></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3"><input type="submit"  onclick="SaveEmail()" value="Send"></td>
+                </tr>
+            </table>
+        </aside>
+        
+    </article>
+    
+    <footer class="mh5">    
+            
+        <table>
+            
+            <tr>
+                <td width="31%" class="de"><a>NEWSLETTER</a></td>
+                <td width="5%"></td>
+                <td width="13%" class="de"><a>CUSTOMER</a></td>
+                <td width="5%"></td>
+                <td width="13%" class="de"><a>COMPANY</a></td>
+                <td width="5%"></td>
+                <td width="13%" class="de"><a>FEEDBACK</a></td>
+                <td width="2%"></td>
+                <td width="13%" class="de"><a>FOLLOW US</a></td>
+            </tr>
+
+            <tr>
+                <td style="font-size: 1.1vw;"><a>Stay updated with our latest offers.</a></td>   
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a href="home.html">HOME</a></td>
+                <td></td>
+                <td><a href="home.html">HOME</a></td>
+                <td></td>
+                <td rowspan="3">We would like to hear from you with any feedback about our website or products.</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a href="about.html">ABOUT</a></td>
+                <td></td>
+                <td><a href="about.html">ABOUT</a></td>
+                <td></td>
+                
+                <td></td>
+                <td><i class="fa fa-facebook" style="font-size: 1.5vw;"></i><a class="loca">Facebook</a></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><input type="email" name="" id="" placeholder="your.address@email.com"></td>
+                <td></td>
+                <td><a href="shop.html">SHOP</a></td>
+                <td></td>
+                <td><a href="shop.html">SHOP</a></td>
+                <td></td>
+                
+                <td></td>
+                <td><i class="fa fa-twitter" style="font-size: 1.5vw;"></i> <a>Twitter</a></td>
+            </tr>
+
+            <tr>
+                
+                <td></td>
+                <td><a href="blog.html">BLOG</a></td>
+                <td></td>
+                <td><a href="blog.html">BLOG</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><i class="fa fa-pinterest-p" style="font-size: 1.5vw;"></i><a class="loca">Pinterest</a></td>
+            </tr>
+
+            <tr>
+                
+                <td></td>
+                <td><a href="contact.html">CONTACT</a></td>
+                <td></td>
+                <td><a href="contact.html">CONTACT</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><i class="fa fa-skype"  style="font-size: 1.5vw;"></i><a class="loca">Skype</a></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><input type="submit" value="SUBCRIBE"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+        
+        <a class="end">© 2016 Kallyas.net | All rights reserved.</a>
+    
+    </footer>
+
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPossition);
+            }
+        }
+
+        function showPossition(position){
+            x.innerHTML = "Vĩ độ: " + position.coord.latitude + "<br> Kinh độ: " + position.coords.longtitude;
+        }
+        function SaveEmail()
+        {
+            let Email = document.getElementById('Mail').value;
+            localStorage.setItem('MailKH', Email);
+    
+            window.location.href = "../thank/index.html";
+        }
+
+    </script>
+    
+</body>
+</html>

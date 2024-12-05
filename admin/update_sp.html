@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS13831</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <style>
+        .bang input[type="text"]{
+            padding: 10px 10px;
+            margin: 20px 0px;
+        }
+        .bang input[type="submit"]{
+            padding: 20px 10px;
+            margin: 20px 0px;
+            font-size: 1.5vw;
+            color: black;
+        }
+        .info nav li a{
+            text-decoration: none;
+        }
+        .mh{
+            min-height: 300px;
+        }
+    </style>
+<body>
+
+    <header class="row mh1">
+        
+        <nav class="icons">
+            <li class="icon h"><i class="fa fa-facebook"></i></li>
+            <li class="icon h"><i class="fa fa-twitter"></i></li>
+            <li class="icon h"><i class="fa fa-pinterest-p"></i></li>
+            <li class="icon h"><i class="fa fa-instagram"></i></li>
+            <a style="font-size: 1vw;">Need Help? call: 0900 800 900</a>
+        </nav>
+
+        <section class="info">
+            <nav>
+                <li><a href="?act">ADMIN</a></li>
+                <li><a>LOGOUT</a></li>    
+            </nav>
+        </section>
+    
+    </header>
+    <article class="row mh2">
+        
+        <aside class="img">
+            <a href="index.html"><img src="../anh/logo.png" alt=""></a>
+        </aside>
+        
+        <aside class="title">
+            <section class="title1" id="menu">
+                <nav>
+                    <!-- <li><a href="index.html" style="color: #8f6e43;">TRANG CHỦ</a></li> -->
+                    <li><a href="show_loai.html">LOẠI</a></li>
+                    <li><a href="show_sp.html" style="color: #8f6e43;">SẢN PHẨM</a></li>
+                    <li><a href="show_user.html">USER</a></li>
+                    <li><a href="show_donhang.html">ĐƠN HÀNG</a></li>
+                </nav>
+            </section>
+            
+            <aside class="title2">
+                <input type="submit" value="PROMOTION">
+            </aside>
+
+        </aside>
+    
+    </article>
+    
+    <article class="row mh4">
+        <a>UPDATE PRODUCE</a>
+        <aside class="box mh">
+            <table>
+                
+                <div class="bang">
+
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <input type="text" name="txtma" id="" placeholder="Mã sản phẩm" value="" readonly>
+                        <input type="text" name="txtName" id="" placeholder="Name">
+                        <input type="text" name="txtBrand" id="" placeholder="Brand">
+                        <input type="text" name="txtOriginal" id="" placeholder="Original">    
+                        <input type="text" name="txtPrice" id="" placeholder="Price">     
+                        <select name="selLoai" id="" value = "Catalog"><option value = ''></option></select>
+                        <input type="text" name="txtMore" id="" placeholder="More Produce"> <br> <br> <br>
+                        <input type="file" name="fileupload" id="">  <br> <br> <br>
+                        <input type="submit" value="UPDATE PRODUCE" name="btnUpdate">
+                    </form>
+                     
+                </div>
+            </table>
+            
+        </aside>
+        
+    </article>
+    
+    <div class="row mh5">
+        <footer>
+            <table>
+                
+                <tr>
+                    <td width="31%" class="title4"><a>NEWSLETTER</a></td>
+                    <td width="5%"></td>
+                    <td width="13%" class="title4"><a>CUSTOMER</a></td>
+                    <td width="5%"></td>
+                    <td width="13%" class="title4"><a>COMPANY</a></td>
+                    <td width="5%"></td>
+                    <td width="13%" class="title4"><a>FEEDBACK</a></td>
+                    <td width="2%"></td>
+                    <td width="13%" class="title4"><a>FOLLOW US</a></td>
+                </tr>
+
+                <tr>
+                    <td style="font-size: 1.1vw;"><a>Stay updated with our latest offers.</a></td>   
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="index.html">HOME</a></td>
+                    <td></td>
+                    <td><a href="index.html">HOME</a></td>
+                    <td></td>
+                    <td rowspan="3">We would like to hear from you with any feedback about our website or products.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><a href="show_loai.html">CATALOG</a></td>
+                    <td></td>
+                    <td><a href="show_loai.html">CATALOG</a></td>
+                    <td></td>
+                    
+                    <td></td>
+                    <td><i class="fa fa-facebook" style="font-size: 1.5vw;"></i><a class="loca">Facebook</a></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3"><input type="email" name="" id="" placeholder="your.address@email.com"></td>
+                    <td></td>
+                    <td><a href="show_sp.html">PRODUCT</a></td>
+                    <td></td>
+                    <td><a href="show_sp.html">PRODUCT</a></td>
+                    <td></td>
+                    
+                    <td></td>
+                    <td><i class="fa fa-twitter" style="font-size: 1.5vw;"></i> <a>Twitter</a></td>
+                </tr>
+
+                <tr>
+                    
+                    <td></td>
+                    <td><a href="show_blog.html">BLOG</a></td>
+                    <td></td>
+                    <td><a href="show_blog.html">BLOG</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-pinterest-p" style="font-size: 1.5vw;"></i><a class="loca">Pinterest</a></td>
+                </tr>
+
+                <tr>
+                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="fa fa-skype"  style="font-size: 1.5vw;"></i><a class="loca">Skype</a></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3"><input style="width: 30%; background-color: #8f6e43; border-radius: 3px; border: 0; padding: 5% 0; font-weight: bolder; color: white; font-size: 1vw;" type="submit" value="SUBCRIBE"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+            
+        </footer>
+        
+        <a class="end">© 2016 Kallyas.net | All rights reserved.</a>
+    </div>
+
+
+    
+</body>
+</html>

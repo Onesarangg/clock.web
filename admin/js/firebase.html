@@ -1,0 +1,40 @@
+<html>
+    <head></head>
+    <body>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCxdenDCX6uJAjgnud4rHt9AgFvz_3b4p8",
+    authDomain: "bai4-lab8.firebaseapp.com",
+    databaseURL: "https://bai4-lab8-default-rtdb.firebaseio.com",
+    projectId: "bai4-lab8",
+    storageBucket: "bai4-lab8.appspot.com",
+    messagingSenderId: "957494057858",
+    appId: "1:957494057858:web:94101e9f118f0f12114d9b",
+    measurementId: "6GX7lUevg9rRDspRVEv0uk96VQc9hwo9coUStle8"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    let database = firebase.database();
+        function getData(){
+            database.ref('/Product').once('value', function(snapshot){
+                snapshot.forEach(function(childSnapshot){
+                    var childKey = childSnapshot.key;
+                    var childData = childSnapshot.val();
+                    document.getElementById("data").innerHTML = childData['productName'];
+                })
+            })
+        }
+        getData();
+        </script>
+        <p id="data"></p>
+    </body>
+</html>

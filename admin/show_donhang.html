@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS13831</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <style>
+        .info nav li a{
+            text-decoration: none;
+        }
+        .box article button{
+            padding: 15px 15px;
+            margin-top: 3%;
+            background-color: #8f6e43;
+            border: 0;
+            border-radius: 5px;
+        }
+        .box article button a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="row mh1">
+        
+        <nav class="icons">
+            <li class="icon h"><i class="fa fa-facebook"></i></li>
+            <li class="icon h"><i class="fa fa-twitter"></i></li>
+            <li class="icon h"><i class="fa fa-pinterest-p"></i></li>
+            <li class="icon h"><i class="fa fa-instagram"></i></li>
+            <a style="font-size: 1vw;">Need Help? call: 0900 800 900</a>
+        </nav>
+
+        <section class="info">
+            <nav>
+                <li><a href="?act">ADMIN</a></li>
+                <li><a>LOGOUT</a></li>    
+            </nav>
+        </section>
+    
+    </header>
+    <article class="row mh2">
+        
+        <aside class="img">
+            <a href="index.html"><img src="../anh/logo.png" alt=""></a>
+        </aside>
+        
+        <aside class="title">
+            <section class="title1" id="menu">
+                <nav>
+                    <!-- <li><a href="index.html">TRANG CHỦ</a></li> -->
+                    <li><a href="show_loai.html">LOẠI</a></li>
+                    <li><a href="show_sp.html">SẢN PHẨM</a></li>
+                    <li><a href="show_user.html">USER</a></li>
+                    <li><a href="show_donhang.html" style="color: #8f6e43;">ĐƠN HÀNG</a></li>
+                </nav>
+            </section>
+            
+            <aside class="title2">
+                <input type="submit" value="PROMOTION">
+            </aside>
+
+        </aside>
+    
+    </article>
+
+    <article class="row mh4">
+
+        <aside class="box">
+            
+                
+                <div class="bang">
+                    <div style="width: 80%;">
+                        <table id="list-order"  style="font-size: 2vw; color: rgb(34, 33, 33); font-weight: bolder;">
+                            <tr style="font-size: 2vw; color: rgb(34, 33, 33); font-weight: bolder;">
+                                <td>Loại</td>
+                                <td>Sản phẩm</td>
+                                <td>Người đặt</td>
+                                <td>Sđt</td>
+                                <td>Địa chỉ</td>
+                                <td>Ghi chú</td>
+                                <td>Số lượng</td>
+                                <td>Giá thành</td>
+                            </tr>
+                        </table>
+                    </div>  
+                </div> 
+            <article>
+                <button><a href="them_loai.html" style="font-size: 1.5vw; color: black;">ADD CATALOG</a></button>
+            </article>
+        </aside>
+        
+    </article>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+   <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCi9QXuAfNorwth9uuyOnd1iKuvoMdCjpk",
+        authDomain: "assignment-10c.firebaseapp.com",
+        databaseURL: "https://assignment-10c-default-rtdb.firebaseio.com",
+        projectId: "assignment-10c",
+        storageBucket: "assignment-10c.appspot.com",
+        messagingSenderId: "974946854890",
+        appId: "1:974946854890:web:e9373cf55951c59743f493"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let database = firebase.database();
+    // function getData(){
+    //         database.ref('/Catalogies/Cate1').once('value', function(snapshot){
+    //             snapshot.forEach(function(childSnapshot){
+    //                 var childKey = childSnapshot.key;
+    //                 var childData = childSnapshot.val();
+    //                 document.getElementById("list-catalog").innerHTML = childData['nameCate'];
+    //             })
+    //         })
+    //     }
+    //     getData();
+
+        database.ref('Order_detail').orderByKey().once('value').then(function(snapshot) {
+ 
+ var listCatalog = snapshot.val()
+
+   let listCatalogView = document.querySelector('#list-order')
+
+   console.log(listCatalog)
+        for (let index in listCatalog) {
+                console.log(listCatalog[index])
+              
+                // Tạo thêm 1 dòng ở cuối bảng bằng cú pháp sau
+                let dong_moi = listCatalogView.insertRow(-1);
+
+                let o1 = dong_moi.insertCell(0);
+                o1.innerText = listCatalog[index].CateID;
+                let o2 = dong_moi.insertCell(1);
+                o2.innerText = listCatalog[index].ProID;
+                let o3 = dong_moi.insertCell(2);
+                o3.innerText = listCatalog[index].nameKH;
+                let o4 = dong_moi.insertCell(3);
+                o4.innerText = listCatalog[index].Phonenumber;
+                let o5 = dong_moi.insertCell(4);
+                o5.innerText = listCatalog[index].Address;
+                let o6 = dong_moi.insertCell(5);
+                o6.innerText = listCatalog[index].Status;
+                let o7 = dong_moi.insertCell(6);
+                o7.innerText = listCatalog[index].Quantity;
+                let o8 = dong_moi.insertCell(7);
+                o8.innerText = listCatalog[index].Price;
+
+                // Thêm ô thứ ba, chỉ số thứ tự là 2, ô này dùng để hiển thị fullname
+                let o9 = dong_moi.insertCell(8);
+                o9.innerHTML = `<td><a href='update_loai.html/${listCatalog[index].IDCate}'><i class='fa fa-edit' style='font-size:24px'></i></a></td>`;
+
+                // Thêm ô thứ bốn, chỉ số thứ tự là 3, ô này dùng để hiển thị email
+                let o10 = dong_moi.insertCell(9);
+                o10.innerHTML = `<td><a href ='remove.html'><i class='fa fa-trash-o' style='font-size:24px'></i></a></td>`;
+   }
+
+})
+// <td>${listCatalog[index]}</td>
+    </script>
+</body>
+</html>
